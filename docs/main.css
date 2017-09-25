@@ -12,6 +12,7 @@ body {
 }
 
 .construction {
+  text-align: center;
   font-size: 1.2em;
   position: absolute;
   left: 50%;
