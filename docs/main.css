@@ -23,7 +23,9 @@ body {
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .bee {
@@ -31,7 +33,8 @@ body {
   top: 150px;
   left: 270px;
   -webkit-transform: rotate(40deg);
-  transform: rotate(40deg);
+  -ms-transform: rotate(40deg);
+      transform: rotate(40deg);
   -webkit-animation: move 5s;
   animation: move 5s;
 }
@@ -53,7 +56,8 @@ body {
   top: -30px;
   left: 45px;
   -webkit-transform: rotate(-20deg);
-  transform: rotate(-20deg);
+  -ms-transform: rotate(-20deg);
+      transform: rotate(-20deg);
   z-index: -1;
 }
 
@@ -74,7 +78,8 @@ body {
 
 .antenna-right {
   -webkit-transform: rotate(200deg);
-  transform: rotate(200deg);
+  -ms-transform: rotate(200deg);
+      transform: rotate(200deg);
   left: 80px;
 }
 
@@ -146,7 +151,8 @@ body {
   top: 40px;
   left: -40px;
   -webkit-transform: rotate(30deg);
-  transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+      transform: rotate(30deg);
   z-index: -1;
   -webkit-animation: fly 2s infinite;
   animation: fly 2s infinite;
@@ -155,7 +161,8 @@ body {
 .wings-right {
   left: 123px;
   -webkit-transform: rotate(-30deg);
-  transform: rotate(-30deg);
+  -ms-transform: rotate(-30deg);
+      transform: rotate(-30deg);
   -webkit-animation: fly-2 2s infinite;
   animation: fly-2 2s infinite;
 }
@@ -182,7 +189,8 @@ body {
   left: 151px;
   z-index: -2;
   -webkit-transform: rotate(40deg);
-  transform: rotate(40deg);
+  -ms-transform: rotate(40deg);
+      transform: rotate(40deg);
   -webkit-animation: trail 6s;
   animation: trail 6s;
 }
@@ -210,7 +218,8 @@ body {
   border-right: 20px solid transparent;
   border-top: 40px solid white;
   -webkit-transform: rotate(50deg);
-  transform: rotate(50deg);
+  -ms-transform: rotate(50deg);
+      transform: rotate(50deg);
   position: absolute;
   top: 85px;
   left: -15px;
@@ -221,7 +230,9 @@ body {
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   text-align: center;
 }
 
@@ -302,19 +313,22 @@ body {
     left: -100%;
   }
   50% {
-    transform: rotate(0deg) rotateY(180deg);
+    -webkit-transform: rotate(0deg) rotateY(180deg);
+            transform: rotate(0deg) rotateY(180deg);
   }
 }
 @keyframes fly {
   50% {
     top: 0px;
-    transform: rotate(70deg);
+    -webkit-transform: rotate(70deg);
+            transform: rotate(70deg);
   }
 }
 @keyframes fly-2 {
   50% {
     top: 0px;
-    transform: rotate(-70deg);
+    -webkit-transform: rotate(-70deg);
+            transform: rotate(-70deg);
   }
 }
 @keyframes speech {
