@@ -10,10 +10,9 @@
   <meta name="keywords" content="HiveMonitor, Hive, Monitor, Matthew Christopher, Jack Puttock, Etonbury Academy">
   <meta name="author" content="Matthew Christopher">
   <meta name="robots" content="index, follow">
-  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
 
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
-  <link href='/hivemonitor/main.css' rel='stylesheet' type='text/css'>
+  <link href='/hivemonitor/load.css' rel='stylesheet' type='text/css'>
 
 </head>
 
@@ -49,20 +48,10 @@
     </div>
   </div>
 
-  <div class="main">
-    <div class="construction">
-      <p>This page is currently under construction.</p>
-      <p>Sorry!</p>
-    </div>
-  </div>
-
   <script>
 
     setTimeout(() => {
-      document.getElementsByClassName('contain')[0].style.display = 'none';
-      document.getElementsByClassName('talk')[0].style.display = 'none';
-      document.getElementsByClassName('main')[0].style.display = 'block';
-      document.getElementsByClassName('construction')[0].style.opacity = 1;
+      window.location.replace("/hivemonitor/home");
     }, 7000);
 
   </script>
