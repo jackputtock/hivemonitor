@@ -202,11 +202,12 @@ body {
   left: -15px;
 }
 
-h2 {
+.loading {
   color: #232323;
   position: absolute;
-  top: 37px;
-  left: 40px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 @-webkit-keyframes move {
