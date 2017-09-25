@@ -1,41 +1,68 @@
-<title>Hive Monitor</title>
+<!DOCTYPE html>
+<html lang="en">
 
-<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
-<link href='/hivemonitor/main.css' rel='stylesheet' type='text/css'>
+<head>
 
-<script>
-  
-setTimeout(function() {
-  document.getElementsByClassName('loading')[0].innerHTML = 'Loaded!';
-}, 6500);
+  <title>HiveMonitor</title>
 
-</script>
+  <meta charset="UTF-8">
+  <meta name="description" content="An open-source, free-to-use Arduino program used for monitoring the humidity and temperature of your bee hive.">
+  <meta name="keywords" content="HiveMonitor, Hive, Monitor, Matthew Christopher, Jack Puttock, Etonbury Academy">
+  <meta name="author" content="Matthew Christopher">
+  <meta name="robots" content="index, follow">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<div class='contain'>
-  <div class='bee'>
-    <div class='bee-body'>
-      <div class='antena'>
-        <div class='top'></div>
-        <div class='top top-right'></div>
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+  <link href='/hivemonitor/main.css' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+
+  <div class="contain">
+    <div class="bee">
+      <div class="bee-body">
+        <div class="antena">
+          <div class="top"></div>
+          <div class="top top-right"></div>
+        </div>
+        <div class="antena antena-right"></div>
+        <div class="eye"></div>
+        <div class="eye eye-right"></div>
+        <div class="smile">
+          <div class="mouth"></div>
+        </div>
+        <div class="stripe"></div>
+        <div class="stripe stripe-bottom"></div>
+        <div class="wings"></div>
+        <div class="wings wings-right"></div>
+        <div class="stinger"></div>
       </div>
-      <div class='antena antena-right'></div>
-      <div class='eye'></div>
-      <div class='eye eye-right'></div>
-      <div class='smile'>
-        <div class='mouth'></div>
-      </div>
-      <div class='stripe'></div>
-      <div class='stripe stripe-bottom'></div>
-      <div class='wings'></div>
-      <div class='wings wings-right'></div>
-      <div class='stinger'></div>
+    </div>
+    <div class='trail'></div>
+  </div>
+
+  <div class="talk">
+    <div class="bubble">
+      <h2 class="loading">Loading...</h2>
+      <div class="triangle"></div>
     </div>
   </div>
-  <div class='trail'></div>
-</div>
-<div class='talk'>
-  <div class='bubble'>
-    <h2 class='loading'>Loading...</h2>
-    <div class='triangle'></div>
+
+  <div class="main">
+    <div class="construction">
+      <p>This page is currently under construction.</p>
+      <p>Sorry!</p>
+    </div>
   </div>
-</div>
+
+  <script>
+
+    setTimeout(() => {
+      document.getElementsByClassName('contain')[0].style.display = 'none';
+      document.getElementsByClassName('talk')[0].style.display = 'none';
+    }, 6500);
+
+  </script>
+
+</body>

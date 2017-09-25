@@ -12,6 +12,14 @@ body {
   overflow: hidden;
 }
 
+.construction {
+  font-size: 1.2em;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .bee {
   position: absolute;
   top: 150px;
@@ -30,7 +38,7 @@ body {
   position: relative;
 }
 
-.antena {
+.antenna {
   width: 20px;
   height: 50px;
   border-radius: 50%;
@@ -58,7 +66,7 @@ body {
   left: 55px;
 }
 
-.antena-right {
+.antenna-right {
   -webkit-transform: rotate(200deg);
   transform: rotate(200deg);
   left: 80px;
@@ -208,6 +216,7 @@ body {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 @-webkit-keyframes move {
