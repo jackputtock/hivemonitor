@@ -1,0 +1,344 @@
+body {
+  background-color: #c4edf7;
+}
+
+.bee {
+  position: absolute;
+  top: 150px;
+  left: 270px;
+  -webkit-transform: rotate(40deg);
+  transform: rotate(40deg);
+  -webkit-animation: move 5s;
+  animation: move 5s;
+}
+
+.bee-body {
+  width: 150px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #f5cc69;
+  position: relative;
+}
+
+.antena {
+  width: 20px;
+  height: 50px;
+  border-radius: 50%;
+  border-right: 2px solid #232323;
+  position: absolute;
+  top: -30px;
+  left: 45px;
+  -webkit-transform: rotate(-20deg);
+  transform: rotate(-20deg);
+  z-index: -1;
+}
+
+.top {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #232323;
+  position: absolute;
+  top: -5px;
+  left: 7px;
+}
+
+.top-right {
+  top: 10px;
+  left: 55px;
+}
+
+.antena-right {
+  -webkit-transform: rotate(200deg);
+  transform: rotate(200deg);
+  left: 80px;
+}
+
+.eye {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: #232323;
+  position: absolute;
+  left: 50px;
+  top: 25px;
+  -webkit-animation: face 6s;
+  animation: face 6s;
+}
+
+.eye-right {
+  left: 90px;
+}
+
+.smile {
+  width: 40px;
+  height: 30px;
+  border-bottom: 2px solid #232323;
+  border-radius: 50%;
+  position: absolute;
+  top: 30px;
+  left: 55px;
+  -webkit-animation: face 6s;
+  animation: face 6s;
+}
+
+.mouth {
+  width: 20px;
+  height: 13px;
+  background-color: #232323;
+  position: absolute;
+  left: 10px;
+  top: 30px;
+  border-radius: 10% 10% 50% 50%;
+  -webkit-animation: mouth 6s;
+  animation: mouth 6s;
+}
+
+.stripe {
+  width: 148px;
+  height: 15px;
+  background-color: #232323;
+  border-radius: 40% 40% 10% 10%;
+  position: absolute;
+  top: 80px;
+  left: 1px;
+  opacity: .80;
+}
+
+.stripe-bottom {
+  top: 120px;
+  width: 145px;
+  left: 3px;
+  border-radius: 30% 30% 100% 100%;
+}
+
+.wings {
+  height: 150px;
+  width: 70px;
+  background-color: white;
+  border-radius: 50%;
+  opacity: .70;
+  position: absolute;
+  top: 40px;
+  left: -40px;
+  -webkit-transform: rotate(30deg);
+  transform: rotate(30deg);
+  z-index: -1;
+  -webkit-animation: fly 2s infinite;
+  animation: fly 2s infinite;
+}
+
+.wings-right {
+  left: 123px;
+  -webkit-transform: rotate(-30deg);
+  transform: rotate(-30deg);
+  -webkit-animation: fly-2 2s infinite;
+  animation: fly-2 2s infinite;
+}
+
+.stinger {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 40px solid #232323;
+  position: absolute;
+  top: 193px;
+  z-index: -1;
+  left: 55px;
+}
+
+.trail {
+  width: 6px;
+  height: 350px;
+  border-left: 4px dashed gray;
+  position: absolute;
+  opacity: .30;
+  top: 305px;
+  left: 151px;
+  z-index: -2;
+  -webkit-transform: rotate(40deg);
+  transform: rotate(40deg);
+  -webkit-animation: trail 6s;
+  animation: trail 6s;
+}
+
+.talk {
+  position: absolute;
+  left: 475px;
+  top: 20px;
+  -webkit-animation: speech 9s;
+  animation: speech 9s;
+}
+
+.bubble {
+  width: 200px;
+  height: 150px;
+  background-color: white;
+  border-radius: 50%;
+  position: relative;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 40px solid white;
+  -webkit-transform: rotate(50deg);
+  transform: rotate(50deg);
+  position: absolute;
+  top: 85px;
+  left: -15px;
+}
+
+h2 {
+  font-family: 'ABeeZee', sans-serif;
+  font-color: #232323;
+  position: absolute;
+  top: 37px;
+  left: 40px;
+}
+
+@-webkit-keyframes move {
+  0% {
+    top: 200%;
+    left: -100%;
+  }
+  50% {
+    -webkit-transform: rotate(0deg) rotateY(180deg);
+  }
+}
+@-webkit-keyframes fly {
+  50% {
+    top: 0px;
+    -webkit-transform: rotate(70deg);
+  }
+}
+@-webkit-keyframes fly-2 {
+  50% {
+    top: 0px;
+    -webkit-transform: rotate(-70deg);
+  }
+}
+@-webkit-keyframes speech {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
+  }
+}
+@-webkit-keyframes face {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
+  }
+}
+@-webkit-keyframes mouth {
+  0% {
+    opacity: 0;
+    height: 0;
+  }
+  50% {
+    opacity: 0;
+    height: 0px;
+  }
+  100% {
+    opacity: 100;
+    height: 13px;
+  }
+}
+@-webkit-keyframes trail {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 0;
+  }
+  100% {
+    opacity: .30;
+  }
+}
+@keyframes move {
+  0% {
+    top: 200%;
+    left: -100%;
+  }
+  50% {
+    transform: rotate(0deg) rotateY(180deg);
+  }
+}
+@keyframes fly {
+  50% {
+    top: 0px;
+    transform: rotate(70deg);
+  }
+}
+@keyframes fly-2 {
+  50% {
+    top: 0px;
+    transform: rotate(-70deg);
+  }
+}
+@keyframes speech {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
+  }
+}
+@keyframes face {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
+  }
+}
+@keyframes mouth {
+  0% {
+    opacity: 0;
+    height: 0;
+  }
+  50% {
+    opacity: 0;
+    height: 0px;
+  }
+  100% {
+    opacity: 100;
+    height: 13px;
+  }
+}
+@keyframes trail {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 0;
+  }
+  100% {
+    opacity: .30;
+  }
+}
